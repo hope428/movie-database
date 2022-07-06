@@ -23,7 +23,7 @@ async function fillWatchlist() {
   if (watchlistIDArray && watchlistIDArray.length > 0) {
     for (let movie of watchlistIDArray) {
       const response = await fetch(
-        `http://www.omdbapi.com/?i=${movie}&apikey=3286cdc5`
+        `https://www.omdbapi.com/?i=${movie}&apikey=3286cdc5`
       );
       const responseData = await response.json();
 
