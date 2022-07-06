@@ -1,0 +1,199 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+header {
+    margin: 0;
+    background-color: rgba(0, 0, 0, .8);
+    background-image: url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.blue {
+    color: blue;
+    display: block;
+}
+
+.not-added {
+    display: none;
+}
+
+form {
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 40px;
+    width: 60%;
+}
+
+button {
+    height: 45px;
+    width: 20%;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+h1 {
+    padding: 1.5em 0;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.search-placeholder {
+    margin: auto;
+    color: lightgray;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.search-placeholder>i {
+    font-size: 4rem;
+}
+
+
+.movie-result {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin: 1em 0;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+img {
+    height: 210px;
+    padding-right: 1em;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-star {
+    color: rgb(253, 190, 16);
+}
+
+.fa-cirlcle-plus {
+    size: .75rem;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.options, a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.description {
+    font-weight: 300;
+    color: gray;
+}
+
+#results-list, #watchlist-container, #buttons {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin: 2em auto;
+}
+
+.divider {
+    color: gray;
+    font-weight: 300;
+}
+
+#watchlist-btn {
+    cursor: pointer;
+}
+
+#remove-btn {
+    cursor: pointer;
+}
+
+#buttons {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+#buttons>button {
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: gray;
+    margin: 2em;
+    background-color: rgb(235, 235, 235);
+}
+
+.fa-square-check {
+    padding-right: 1em;
+    align-self: center;
+    color: rgb(40, 179, 22);
+}
+
+#added {
+    border: 1px solid gray;
+    width: 350px;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgb(249, 249, 249);
+    padding: 1em 0;
+    position: fixed;
+}
+
+@media (max-width: 660px) {
+    #results-list, #watchlist-container, #buttons {
+        max-width: 300px;
+    }
+
+    img {
+        width: 150px;
+        align-self: center;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .movie-result {
+        flex-direction: column;
+    }
+
+    #buttons>button {
+        width: 200px;
+    }
+}
