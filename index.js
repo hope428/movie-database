@@ -40,7 +40,7 @@ function addToWatchlist(movieID) {
 async function displaySearchResults() {
   for (let movieItem of moviesIDArray) {
     const displayResponse = await fetch(
-      `http://www.omdbapi.com/?i=${movieItem}&apikey=3286cdc5`
+      `https://www.omdbapi.com/?i=${movieItem}&apikey=3286cdc5`
     );
     const displayResponseData = await displayResponse.json();
     console.log(displayResponseData)
