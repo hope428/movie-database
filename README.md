@@ -12,6 +12,12 @@ This project was made in HTML, CSS, and Javascript. It features the OMDB Api. Wh
 ![image of the search results](./images/searchresults.png)
 ![image of the watchlist](./images/watchlist.png)
 
+## Features
+-Movie Database API
+-Dynamic pages for rendering movie searches
+-Watchlist button!
+-Localstorage for movie watchlist
+
 ## Credits
 
 [OMDB Api](https://www.omdbapi.com/)
