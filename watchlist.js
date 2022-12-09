@@ -1,4 +1,4 @@
-let watchlistIDArray = JSON.parse(localStorage.getItem("watchlistMovies"));
+watchlistIDArray = JSON.parse(localStorage.getItem("watchlistMovies"));
 const watchlistDIV = document.getElementById("watchlist-container");
 
 function remove(removedID) {
