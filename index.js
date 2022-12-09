@@ -43,7 +43,6 @@ async function displaySearchResults() {
       `https://www.omdbapi.com/?i=${movieItem}&apikey=3286cdc5`
     );
     const displayResponseData = await displayResponse.json();
-    console.log(displayResponseData)
     movieHTML = `
         <div class="movie-result">
         <img src="${displayResponseData.Poster}" />
